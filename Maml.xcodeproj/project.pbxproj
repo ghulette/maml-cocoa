@@ -12,6 +12,9 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B1759F5311094E1900C84F3F /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = B1759F5211094E1900C84F3F /* Agent.m */; };
+		B1759F5811094E4900C84F3F /* Patch.m in Sources */ = {isa = PBXBuildFile; fileRef = B1759F5711094E4900C84F3F /* Patch.m */; };
+		B1759F7611094F6A00C84F3F /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = B1759F7511094F6A00C84F3F /* World.m */; };
 		B1FC978211091D2600642B6F /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC978111091D2600642B6F /* Controller.m */; };
 		B1FC97AB1109284000642B6F /* MamlView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC97AA1109284000642B6F /* MamlView.m */; };
 /* End PBXBuildFile section */
@@ -29,6 +32,12 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Maml-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Maml-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Maml.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maml.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1759F5111094E1900C84F3F /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
+		B1759F5211094E1900C84F3F /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
+		B1759F5611094E4900C84F3F /* Patch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patch.h; sourceTree = "<group>"; };
+		B1759F5711094E4900C84F3F /* Patch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patch.m; sourceTree = "<group>"; };
+		B1759F7411094F6A00C84F3F /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		B1759F7511094F6A00C84F3F /* World.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = World.m; sourceTree = "<group>"; };
 		B1FC978011091D2600642B6F /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		B1FC978111091D2600642B6F /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		B1FC97A91109284000642B6F /* MamlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MamlView.h; sourceTree = "<group>"; };
@@ -50,8 +59,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B1759F5111094E1900C84F3F /* Agent.h */,
+				B1759F5211094E1900C84F3F /* Agent.m */,
+				B1759F5611094E4900C84F3F /* Patch.h */,
+				B1759F5711094E4900C84F3F /* Patch.m */,
 				B1FC978011091D2600642B6F /* Controller.h */,
 				B1FC978111091D2600642B6F /* Controller.m */,
+				B1759F7411094F6A00C84F3F /* World.h */,
+				B1759F7511094F6A00C84F3F /* World.m */,
 				B1FC97A91109284000642B6F /* MamlView.h */,
 				B1FC97AA1109284000642B6F /* MamlView.m */,
 				256AC3D80F4B6AC300CF3369 /* MamlAppDelegate.h */,
@@ -185,6 +200,9 @@
 				256AC3DA0F4B6AC300CF3369 /* MamlAppDelegate.m in Sources */,
 				B1FC978211091D2600642B6F /* Controller.m in Sources */,
 				B1FC97AB1109284000642B6F /* MamlView.m in Sources */,
+				B1759F5311094E1900C84F3F /* Agent.m in Sources */,
+				B1759F5811094E4900C84F3F /* Patch.m in Sources */,
+				B1759F7611094F6A00C84F3F /* World.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

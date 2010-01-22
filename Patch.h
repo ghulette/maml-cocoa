@@ -1,5 +1,5 @@
 //
-//  AppController.h
+//  Patch.h
 //  Maml
 //
 //  Created by Geoff Hulette on 1/21/10.
@@ -7,12 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "World.h"
+#import "Agent.h"
 
-@interface Controller : NSObject {
-  IBOutlet NSWindow *window;
-  World *world;
+@interface Patch : Agent {
+  NSColor *color;
 }
-@property (retain) World *world;
+@property (retain) NSColor *color;
 
 @end

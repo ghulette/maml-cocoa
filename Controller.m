@@ -10,7 +10,7 @@
 
 
 @implementation Controller
-@synthesize window;
+@synthesize world;
 
 -(void)awakeFromNib
 {
@@ -21,6 +21,9 @@
   [window setContentSize:defaultSize];
   [window setContentMinSize:minSize];
   [window center];
+  
+  World *w = [[World alloc] initWithWidth:20 Height:20];
+  self.world = w;
 }
 
 @end

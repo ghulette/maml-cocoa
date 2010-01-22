@@ -18,8 +18,8 @@
 
 -(void)drawRect:(NSRect)rect
 {
-  int gridWidth = 20;
-  int gridHeight = 20;
+  int gridWidth = controller.world.width;
+  int gridHeight = controller.world.height;
   NSRect bounds = [self bounds];
   float cellWidth = bounds.size.width / gridWidth;
   float cellHeight = bounds.size.height / gridHeight;
@@ -29,12 +29,10 @@
   
   for(int row=0; row < gridHeight; row ++) {
     for(int col=0; col < gridWidth; col ++) {
+      Patch *p = [controller.world patchAtX:col Y:row];
+      [p.color setFill];
       cellRect.origin.x = col * cellWidth;
       cellRect.origin.y = row * cellHeight;
-      float r = (float)(random() & 0xFF) / (float)(0xFF);
-      float g = (float)(random() & 0xFF) / (float)(0xFF);
-      float b = (float)(random() & 0xFF) / (float)(0xFF);
-      [[NSColor colorWithCalibratedRed:r green:g blue:b alpha:1.0] setFill];
       [NSBezierPath fillRect:cellRect];
     }
   }
