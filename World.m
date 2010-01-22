@@ -22,7 +22,7 @@
     NSMutableArray *patchList = [[NSMutableArray alloc] init];
     for(int y=0; y < height; y++) {
       for(int x=0; x < width; x++) {
-        Patch *p = [[Patch alloc] init];
+        Patch *p = [[Patch alloc] initWithCoordsX:x Y:y];
         [patchList addObject:p];
         [p release];
       }

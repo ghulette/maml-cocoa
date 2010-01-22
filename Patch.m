@@ -10,15 +10,18 @@
 
 
 @implementation Patch
+@synthesize x, y;
 @synthesize color;
 
--(id)init
+-(id)initWithCoordsX:(int)ax Y:(int)ay
 {
   self = [super init];
   if(self) {
-    float r = (float)(random() & 0xFF) / (float)(0xFF);
-    float g = (float)(random() & 0xFF) / (float)(0xFF);
-    float b = (float)(random() & 0xFF) / (float)(0xFF);
+    x = ax;
+    y = ay;
+    float r = 0.0f;
+    float g = 0.0f;
+    float b = (float)x / 20.0f;
     self.color = [NSColor colorWithCalibratedRed:r green:g blue:b alpha:1.0];
   }
   return self;
