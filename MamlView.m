@@ -27,8 +27,8 @@
   cellRect.size.width = cellWidth;
   cellRect.size.height = cellHeight;
   
-  for(int row=0; row < gridHeight; row ++) {
-    for(int col=0; col < gridWidth; col ++) {
+  for(int row = 0; row < gridHeight; row ++) {
+    for(int col = 0; col < gridWidth; col ++) {
       Patch *p = [controller.world patchAtX:col Y:row];
       [p.color setFill];
       cellRect.origin.x = col * cellWidth;

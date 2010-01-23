@@ -1332,7 +1332,7 @@
 						<object class="NSCustomView" id="539852390">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">274</int>
-							<string key="NSFrame">{{20, 20}, {440, 320}}</string>
+							<string key="NSFrameSize">{480, 360}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<string key="NSClassName">MamlView</string>
 						</object>

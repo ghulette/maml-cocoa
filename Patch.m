@@ -10,21 +10,25 @@
 
 
 @implementation Patch
-@synthesize x, y;
-@synthesize color;
 
--(id)initWithCoordsX:(int)ax Y:(int)ay
+-(id)initWithCoordsX:(NSInteger)ax Y:(NSInteger)ay
 {
   self = [super init];
-  if(self) {
-    x = ax;
-    y = ay;
-    float r = 0.0f;
-    float g = 0.0f;
-    float b = (float)x / 20.0f;
-    self.color = [NSColor colorWithCalibratedRed:r green:g blue:b alpha:1.0];
+  if(self != nil) {
+    [self setVar:@"x" Value:[NSNumber numberWithInt:ax]];
+    [self setVar:@"y" Value:[NSNumber numberWithInt:ay]];
+    CGFloat r = 0.0f;
+    CGFloat g = 0.0f;
+    CGFloat b = ((random() & 0xFF) / (CGFloat)0xFF);
+    NSColor *c = [NSColor colorWithCalibratedRed:r green:g blue:b alpha:1.0];
+    [self setVar:@"color" Value:c];
   }
   return self;
+}
+
+-(NSColor *)color
+{
+  return [self getVar:@"color"];
 }
 
 @end

@@ -8,9 +8,23 @@
 
 #import <Cocoa/Cocoa.h>
 
+enum instrs {
+  Done,
+  Random,
+  SetColor
+};
+
 
 @interface Agent : NSObject {
-
+  NSArray *program;
+  NSMutableArray *stack;
+  NSMutableDictionary *env;
 }
+@property (retain) NSArray *program;
+
+-(void)push:(id)val;
+-(id)pop;
+-(void)setVar:(NSString *)var Value:(id)val;
+-(id)getVar:(NSString *)var;
 
 @end
