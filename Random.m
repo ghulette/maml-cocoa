@@ -16,7 +16,7 @@
   float r = (random() & 0xFF) / (float)0xFF;
   NSNumber *n = [NSNumber numberWithFloat:r];
   [agent push:n];
-  [agent step];
+  [agent pcStep];
 }
 
 @end

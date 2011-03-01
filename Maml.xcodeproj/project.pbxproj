@@ -19,6 +19,11 @@
 		B1759F5311094E1900C84F3F /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = B1759F5211094E1900C84F3F /* Agent.m */; };
 		B1759F5811094E4900C84F3F /* Patch.m in Sources */ = {isa = PBXBuildFile; fileRef = B1759F5711094E4900C84F3F /* Patch.m */; };
 		B1759F7611094F6A00C84F3F /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = B1759F7511094F6A00C84F3F /* World.m */; };
+		B198FBAB131D6C69006775CF /* SetVar.m in Sources */ = {isa = PBXBuildFile; fileRef = B198FBAA131D6C69006775CF /* SetVar.m */; };
+		B198FBB5131D6DCA006775CF /* GetVar.m in Sources */ = {isa = PBXBuildFile; fileRef = B198FBB4131D6DCA006775CF /* GetVar.m */; };
+		B198FC07131D7750006775CF /* Done.m in Sources */ = {isa = PBXBuildFile; fileRef = B198FC06131D7750006775CF /* Done.m */; };
+		B198FC0A131D775A006775CF /* Yield.m in Sources */ = {isa = PBXBuildFile; fileRef = B198FC09131D775A006775CF /* Yield.m */; };
+		B198FC0D131D7765006775CF /* Jump.m in Sources */ = {isa = PBXBuildFile; fileRef = B198FC0C131D7765006775CF /* Jump.m */; };
 		B1FC978211091D2600642B6F /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC978111091D2600642B6F /* Controller.m */; };
 		B1FC97AB1109284000642B6F /* MamlView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC97AA1109284000642B6F /* MamlView.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +55,16 @@
 		B1759F5711094E4900C84F3F /* Patch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patch.m; sourceTree = "<group>"; };
 		B1759F7411094F6A00C84F3F /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
 		B1759F7511094F6A00C84F3F /* World.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = World.m; sourceTree = "<group>"; };
+		B198FBA9131D6C69006775CF /* SetVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetVar.h; sourceTree = "<group>"; };
+		B198FBAA131D6C69006775CF /* SetVar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetVar.m; sourceTree = "<group>"; };
+		B198FBB3131D6DCA006775CF /* GetVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetVar.h; sourceTree = "<group>"; };
+		B198FBB4131D6DCA006775CF /* GetVar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVar.m; sourceTree = "<group>"; };
+		B198FC05131D7750006775CF /* Done.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Done.h; sourceTree = "<group>"; };
+		B198FC06131D7750006775CF /* Done.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Done.m; sourceTree = "<group>"; };
+		B198FC08131D775A006775CF /* Yield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yield.h; sourceTree = "<group>"; };
+		B198FC09131D775A006775CF /* Yield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Yield.m; sourceTree = "<group>"; };
+		B198FC0B131D7765006775CF /* Jump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jump.h; sourceTree = "<group>"; };
+		B198FC0C131D7765006775CF /* Jump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jump.m; sourceTree = "<group>"; };
 		B1FC978011091D2600642B6F /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		B1FC978111091D2600642B6F /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		B1FC97A91109284000642B6F /* MamlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MamlView.h; sourceTree = "<group>"; };
@@ -165,6 +180,16 @@
 				B16D5FC2131C7719004DFF88 /* Random.m */,
 				B106C2CE131C8288001E136B /* ConstNum.h */,
 				B106C2CF131C8288001E136B /* ConstNum.m */,
+				B198FBA9131D6C69006775CF /* SetVar.h */,
+				B198FBAA131D6C69006775CF /* SetVar.m */,
+				B198FBB3131D6DCA006775CF /* GetVar.h */,
+				B198FBB4131D6DCA006775CF /* GetVar.m */,
+				B198FC05131D7750006775CF /* Done.h */,
+				B198FC06131D7750006775CF /* Done.m */,
+				B198FC08131D775A006775CF /* Yield.h */,
+				B198FC09131D775A006775CF /* Yield.m */,
+				B198FC0B131D7765006775CF /* Jump.h */,
+				B198FC0C131D7765006775CF /* Jump.m */,
 			);
 			name = Instructions;
 			sourceTree = "<group>";
@@ -242,6 +267,11 @@
 				B16D5F92131C720C004DFF88 /* Binop.m in Sources */,
 				B16D5FC3131C7719004DFF88 /* Random.m in Sources */,
 				B106C2D0131C8288001E136B /* ConstNum.m in Sources */,
+				B198FBAB131D6C69006775CF /* SetVar.m in Sources */,
+				B198FBB5131D6DCA006775CF /* GetVar.m in Sources */,
+				B198FC07131D7750006775CF /* Done.m in Sources */,
+				B198FC0A131D775A006775CF /* Yield.m in Sources */,
+				B198FC0D131D7765006775CF /* Jump.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@
 -(id)initWithWidth:(int)w Height:(int)h
 {
   self = [super init];
-  if(self) {
+  if (self) {
     width = w;
     height = h;
     NSMutableArray *patchList = [[NSMutableArray alloc] init];

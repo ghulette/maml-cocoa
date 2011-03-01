@@ -11,8 +11,10 @@
 
 @interface MamlProgram : NSObject {
   NSArray *instructions;
+  NSDictionary *labels;
 }
 
--(id)initWithArray:(NSArray *)instrs;
+-(id)initWithInstructions:(NSArray *)ins Labels:(NSDictionary *)labs;
+-(NSInteger)indexForlabel:(NSString *)lid;
 
 @end

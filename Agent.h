@@ -8,17 +8,21 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "MamlProgram.h"
+
 @interface Agent : NSObject {
-  NSArray *program;
   NSMutableArray *stack;
-  NSMutableDictionary *env;
   NSInteger pc;
+  NSMutableDictionary *env;
+  MamlProgram *program;
 }
-@property (retain) NSArray *program;
+
+@property (retain) MamlProgram *program;
 
 -(void)push:(id)val;
 -(id)pop;
--(void)step;
+-(void)pcStep;
+-(void)pcJump:(NSInteger)x;
 -(void)setVar:(NSString *)var Value:(id)val;
 -(id)getVar:(NSString *)var;
 

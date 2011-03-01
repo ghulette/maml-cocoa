@@ -38,7 +38,7 @@ double realOp(Operator op, double v1, double v2) {
   double v3 = realOp(op, v1, v2);
   NSNumber *n3 = [NSNumber numberWithDouble:v3];
   [agent push:n3];
-  [agent step];
+  [agent pcStep];
 }
 
 @end

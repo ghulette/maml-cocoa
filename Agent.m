@@ -12,16 +12,13 @@
 @implementation Agent
 @synthesize program;
 
--(id)init 
+-(id)init
 {
   self = [super init];
   if(self != nil) {
     stack = [[NSMutableArray alloc] init];
+    pc = 0;
     env = [[NSMutableDictionary alloc] init];
-    NSMutableArray *prog = [[NSMutableArray alloc] init];
-    [prog addObject:[NSNumber numberWithInt:5]];
-    self.program = prog;
-    [prog release];
   }
   return self;
 }
@@ -38,9 +35,14 @@
   return val;
 }
 
--(void)step
+-(void)pcStep
 {
   pc++;
+}
+
+-(void)pcJump:(NSInteger)x
+{
+  pc = x;
 }
 
 -(void)setVar:(NSString *)var Value:(id)val
@@ -51,6 +53,13 @@
 -(id)getVar:(NSString *)var
 {
   return [env valueForKey:var];
+}
+
+-(void)dealloc
+{
+  [stack release];
+  [env release];
+  [super dealloc];
 }
 
 @end

@@ -14,12 +14,12 @@
 -(id)initWithCoordsX:(NSInteger)ax Y:(NSInteger)ay
 {
   self = [super init];
-  if(self != nil) {
+  if (self) {
     [self setVar:@"x" Value:[NSNumber numberWithInt:ax]];
     [self setVar:@"y" Value:[NSNumber numberWithInt:ay]];
-    CGFloat r = 0.0f;
-    CGFloat g = 0.0f;
-    CGFloat b = ((random() & 0xFF) / (CGFloat)0xFF);
+    float r = 0.0f;
+    float g = 0.0f;
+    float b = ((random() & 0xFF) / (float)0xFF);
     NSColor *c = [NSColor colorWithCalibratedRed:r green:g blue:b alpha:1.0];
     [self setVar:@"color" Value:c];
   }

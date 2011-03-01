@@ -17,8 +17,8 @@
 
 -(void)drawRect:(NSRect)rect
 {
-  int gridWidth = controller.world.width;
-  int gridHeight = controller.world.height;
+  float gridWidth = (float)controller.world.width;
+  float gridHeight = (float)controller.world.height;
   NSRect bounds = [self bounds];
   float cellWidth = bounds.size.width / gridWidth;
   float cellHeight = bounds.size.height / gridHeight;
@@ -26,8 +26,8 @@
   cellRect.size.width = cellWidth;
   cellRect.size.height = cellHeight;
   
-  for(int row = 0; row < gridHeight; row ++) {
-    for(int col = 0; col < gridWidth; col ++) {
+  for(float row = 0.0; row < gridHeight; row += 1.0) {
+    for(float col = 0.0; col < gridWidth; col += 1.0) {
       Patch *p = [controller.world patchAtX:col Y:row];
       [p.color setFill];
       cellRect.origin.x = col * cellWidth;

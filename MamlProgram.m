@@ -11,14 +11,27 @@
 
 @implementation MamlProgram
 
--(id)initWithArray:(NSArray *)instrs
+-(id)initWithInstructions:(NSArray *)ins Labels:(NSDictionary *)labs
 {
   self = [super init];
-  if(self) {
-    instructions = [NSArray arrayWithArray:instrs];
+  if (self) {
+    instructions = [NSArray arrayWithArray:ins];
+    labels = [NSDictionary dictionaryWithDictionary:labs];
   }
   return self;
 }
 
+-(NSInteger)indexForlabel:(NSString *)lid
+{
+  NSNumber *n = (NSNumber *)[labels objectForKey:lid];
+  return [n integerValue];
+}
+
+-(void)dealloc
+{
+  [instructions release];
+  [labels release];
+  [super dealloc];
+}
 
 @end

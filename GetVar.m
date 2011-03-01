@@ -1,35 +1,37 @@
 //
-//  ConstNum.m
+//  GetVar.m
 //  Maml
 //
-//  Created by Geoff Hulette on 2/28/11.
+//  Created by Geoff Hulette on 3/1/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ConstNum.h"
+#import "GetVar.h"
 
 
-@implementation ConstNum
+@implementation GetVar
 
--(id)initWithNumber:(NSNumber *)n
+-(id)initWithVarId:(NSString *)vid
 {
   self = [super init];
   if (self) {
-    value = [n retain];
+    varId = [vid retain];
   }
   return self;
 }
 
 -(void)exec:(Agent *)agent
 {
+  id value = [agent getVar:varId];
   [agent push:value];
   [agent pcStep];
 }
 
 -(void)dealloc
 {
-  [value release];
+  [varId release];
   [super dealloc];
 }
+
 
 @end
