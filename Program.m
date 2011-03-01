@@ -1,15 +1,15 @@
 //
-//  MamlProgram.m
+//  Program.m
 //  Maml
 //
 //  Created by Geoff Hulette on 2/28/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "MamlProgram.h"
+#import "Program.h"
 
 
-@implementation MamlProgram
+@implementation Program
 
 -(id)initWithInstructions:(NSArray *)ins Labels:(NSDictionary *)labs
 {

@@ -1,5 +1,5 @@
 //
-//  MamlProgram.h
+//  Program.h
 //  Maml
 //
 //  Created by Geoff Hulette on 2/28/11.
@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface MamlProgram : NSObject {
+@interface Program : NSObject {
   NSArray *instructions;
   NSDictionary *labels;
 }

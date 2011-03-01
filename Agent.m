@@ -19,8 +19,19 @@
     stack = [[NSMutableArray alloc] init];
     pc = 0;
     env = [[NSMutableDictionary alloc] init];
+    done = NO;
   }
   return self;
+}
+
+-(BOOL)isDone
+{
+  return done;
+}
+
+-(void)done
+{
+  done = YES;
 }
 
 -(void)push:(id)val

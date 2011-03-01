@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "Agent.h"
 
 @interface Done : NSObject {
-
 }
+
+-(void)exec:(Agent *)agent;
 
 @end

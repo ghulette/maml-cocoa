@@ -38,7 +38,7 @@
   return [patches objectAtIndex:y*width+x];
 }
 
--(void)loadProgram:(MamlProgram *)prog
+-(void)loadProgram:(Program *)prog
 {
   
 }

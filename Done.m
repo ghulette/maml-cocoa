@@ -11,4 +11,9 @@
 
 @implementation Done
 
+-(void)exec:(Agent *)agent
+{
+  [agent done];
+}
+
 @end

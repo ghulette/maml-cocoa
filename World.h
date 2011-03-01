@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Patch.h"
-#import "MamlProgram.h"
+#import "Program.h"
 
 
 @interface World : NSObject {
@@ -20,6 +20,6 @@
 
 -(id)initWithWidth:(int)w Height:(int)h;
 -(Patch *)patchAtX:(int)x Y:(int)y;
--(void)loadProgram:(MamlProgram *)prg;
+-(void)loadProgram:(Program *)prg;
 
 @end
