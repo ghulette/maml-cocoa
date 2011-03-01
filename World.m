@@ -38,9 +38,21 @@
   return [patches objectAtIndex:y*width+x];
 }
 
--(void)loadProgram:(Program *)prog
+-(void)loadProgram:(Program *)prg
+{
+  program = [prg retain];
+}
+
+-(void)step
 {
   
+}
+
+-(void)dealloc
+{
+  [program release];
+  [patches release];
+  [super dealloc];
 }
 
 @end

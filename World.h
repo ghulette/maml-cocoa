@@ -14,6 +14,7 @@
 @interface World : NSObject {
   int width, height;
   NSArray *patches;
+  Program *program;
 }
 @property (retain) NSArray *patches;
 @property (readonly) int width, height;
@@ -21,5 +22,6 @@
 -(id)initWithWidth:(int)w Height:(int)h;
 -(Patch *)patchAtX:(int)x Y:(int)y;
 -(void)loadProgram:(Program *)prg;
+-(void)step;
 
 @end
