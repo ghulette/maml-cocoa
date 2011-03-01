@@ -38,6 +38,11 @@
   return val;
 }
 
+-(void)step
+{
+  pc++;
+}
+
 -(void)setVar:(NSString *)var Value:(id)val
 {
   [env setObject:val forKey:var];
@@ -46,31 +51,6 @@
 -(id)getVar:(NSString *)var
 {
   return [env valueForKey:var];
-}
-
--(void)step
-{
-  int pc = 0;
-  BOOL done = false;
-  while (!done) {
-    int instr = [[program objectAtIndex:pc] intValue];
-    switch (instr) {
-      case Random: 
-      { 
-        float val = (random() & 0xFF) / (float)0xFF;
-        [self push:[NSNumber numberWithFloat:val]];
-        pc++;
-        break;
-      }
-      case Done:
-        done = true;
-        break;
-      default:
-        NSLog(@"Unknown instruction: %d", instr);
-        break;
-    }
-    
-  }
 }
 
 @end

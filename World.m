@@ -13,12 +13,12 @@
 @synthesize width, height;
 @synthesize patches;
 
--(id)initWithWidth:(int)aWidth Height:(int)aHeight
+-(id)initWithWidth:(int)w Height:(int)h
 {
   self = [super init];
   if(self) {
-    width = aWidth;
-    height = aHeight;
+    width = w;
+    height = h;
     NSMutableArray *patchList = [[NSMutableArray alloc] init];
     for(int y=0; y < height; y++) {
       for(int x=0; x < width; x++) {
@@ -36,6 +36,11 @@
 -(Patch *)patchAtX:(int)x Y:(int)y
 {
   return [patches objectAtIndex:y*width+x];
+}
+
+-(void)loadProgram:(MamlProgram *)prog
+{
+  
 }
 
 @end

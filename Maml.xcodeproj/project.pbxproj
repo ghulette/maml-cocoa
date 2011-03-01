@@ -12,6 +12,10 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B106C2D0131C8288001E136B /* ConstNum.m in Sources */ = {isa = PBXBuildFile; fileRef = B106C2CF131C8288001E136B /* ConstNum.m */; };
+		B1662DCA131C64CF0014F7B5 /* MamlProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = B1662DC9131C64CF0014F7B5 /* MamlProgram.m */; };
+		B16D5F92131C720C004DFF88 /* Binop.m in Sources */ = {isa = PBXBuildFile; fileRef = B16D5F91131C720C004DFF88 /* Binop.m */; };
+		B16D5FC3131C7719004DFF88 /* Random.m in Sources */ = {isa = PBXBuildFile; fileRef = B16D5FC2131C7719004DFF88 /* Random.m */; };
 		B1759F5311094E1900C84F3F /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = B1759F5211094E1900C84F3F /* Agent.m */; };
 		B1759F5811094E4900C84F3F /* Patch.m in Sources */ = {isa = PBXBuildFile; fileRef = B1759F5711094E4900C84F3F /* Patch.m */; };
 		B1759F7611094F6A00C84F3F /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = B1759F7511094F6A00C84F3F /* World.m */; };
@@ -32,6 +36,14 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Maml-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Maml-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Maml.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maml.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B106C2CE131C8288001E136B /* ConstNum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstNum.h; sourceTree = "<group>"; };
+		B106C2CF131C8288001E136B /* ConstNum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstNum.m; sourceTree = "<group>"; };
+		B1662DC8131C64CF0014F7B5 /* MamlProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MamlProgram.h; sourceTree = "<group>"; };
+		B1662DC9131C64CF0014F7B5 /* MamlProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MamlProgram.m; sourceTree = "<group>"; };
+		B16D5F90131C720C004DFF88 /* Binop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Binop.h; sourceTree = "<group>"; };
+		B16D5F91131C720C004DFF88 /* Binop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Binop.m; sourceTree = "<group>"; };
+		B16D5FC1131C7719004DFF88 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
+		B16D5FC2131C7719004DFF88 /* Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Random.m; sourceTree = "<group>"; };
 		B1759F5111094E1900C84F3F /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
 		B1759F5211094E1900C84F3F /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
 		B1759F5611094E4900C84F3F /* Patch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patch.h; sourceTree = "<group>"; };
@@ -59,6 +71,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B1662DFF131C6C800014F7B5 /* Instructions */,
 				B1759F5111094E1900C84F3F /* Agent.h */,
 				B1759F5211094E1900C84F3F /* Agent.m */,
 				B1759F5611094E4900C84F3F /* Patch.h */,
@@ -67,6 +80,8 @@
 				B1FC978111091D2600642B6F /* Controller.m */,
 				B1759F7411094F6A00C84F3F /* World.h */,
 				B1759F7511094F6A00C84F3F /* World.m */,
+				B1662DC8131C64CF0014F7B5 /* MamlProgram.h */,
+				B1662DC9131C64CF0014F7B5 /* MamlProgram.m */,
 				B1FC97A91109284000642B6F /* MamlView.h */,
 				B1FC97AA1109284000642B6F /* MamlView.m */,
 				256AC3D80F4B6AC300CF3369 /* MamlAppDelegate.h */,
@@ -141,6 +156,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B1662DFF131C6C800014F7B5 /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				B16D5F90131C720C004DFF88 /* Binop.h */,
+				B16D5F91131C720C004DFF88 /* Binop.m */,
+				B16D5FC1131C7719004DFF88 /* Random.h */,
+				B16D5FC2131C7719004DFF88 /* Random.m */,
+				B106C2CE131C8288001E136B /* ConstNum.h */,
+				B106C2CF131C8288001E136B /* ConstNum.m */,
+			);
+			name = Instructions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,7 +197,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Maml" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Maml */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,6 +238,10 @@
 				B1759F5311094E1900C84F3F /* Agent.m in Sources */,
 				B1759F5811094E4900C84F3F /* Patch.m in Sources */,
 				B1759F7611094F6A00C84F3F /* World.m in Sources */,
+				B1662DCA131C64CF0014F7B5 /* MamlProgram.m in Sources */,
+				B16D5F92131C720C004DFF88 /* Binop.m in Sources */,
+				B16D5FC3131C7719004DFF88 /* Random.m in Sources */,
+				B106C2D0131C8288001E136B /* ConstNum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
