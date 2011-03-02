@@ -15,4 +15,6 @@
 }
 @property (retain) World *world;
 
+- (IBAction)step:(id)sender;
+
 @end

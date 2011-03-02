@@ -7,16 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-#import "Agent.h"
+#import "Instruction.h"
 
 typedef enum { Add,Sub,Mult,Div,Eq,Lt,Gt,And,Or } Operator;
 
-@interface Binop : NSObject {
+@interface Binop : NSObject < Instruction > {
   Operator op;
 }
 
 -(id)initWithOperator:(Operator)aOp;
--(void)exec:(Agent *)agent;
 
 @end

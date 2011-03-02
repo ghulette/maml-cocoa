@@ -21,6 +21,18 @@
   return self;
 }
 
+-(id)initWithInstructions:(NSArray *)ins
+{
+  NSDictionary *emptyLabels = [NSDictionary dictionary];
+  return [self initWithInstructions:ins Labels:emptyLabels];
+}
+
+
+-(id)instructionAt:(NSInteger)pc
+{
+  return [instructions objectAtIndex:pc];
+}
+
 -(NSInteger)indexForlabel:(NSString *)lid
 {
   NSNumber *n = (NSNumber *)[labels objectForKey:lid];

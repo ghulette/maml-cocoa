@@ -7,13 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Agent.h"
+#import "Instruction.h"
 
-@interface ConstNum : NSObject {
+@interface ConstNum : NSObject < Instruction > {
   NSNumber *value;
 }
 
 -(id)initWithNumber:(NSNumber *)n;
--(void)exec:(Agent *)agent;
 
 @end

@@ -7,21 +7,21 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
 #import "Program.h"
 
 @interface Agent : NSObject {
   NSMutableArray *stack;
   NSInteger pc;
   NSMutableDictionary *env;
-  BOOL done;
+  BOOL ready,done;
   Program *program;
 }
 
 @property (retain) Program *program;
+@property BOOL done;
+@property BOOL ready;
 
--(BOOL)isDone;
--(void)done;
+-(void)step;
 -(void)push:(id)val;
 -(id)pop;
 -(void)pcStep;

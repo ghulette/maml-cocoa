@@ -13,7 +13,7 @@
 
 -(void)exec:(Agent *)agent
 {
-  [agent done];
+  agent.done = YES;
 }
 
 @end

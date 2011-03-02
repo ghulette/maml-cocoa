@@ -7,14 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Instruction.h"
 
-#import "Agent.h"
-
-@interface GetVar : NSObject {
+@interface GetVar : NSObject < Instruction > {
   NSString *varId;
 }
 
 -(id)initWithVarId:(NSString *)vid;
--(void)exec:(Agent *)agent;
 
 @end

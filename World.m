@@ -41,11 +41,16 @@
 -(void)loadProgram:(Program *)prg
 {
   program = [prg retain];
+  for (Patch *patch in patches) {
+    patch.program = program;
+  }
 }
 
 -(void)step
 {
-  
+  for (Patch *patch in patches) {
+    [patch step];
+  }
 }
 
 -(void)dealloc

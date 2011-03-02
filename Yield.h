@@ -7,10 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Instruction.h"
 
-
-@interface Yield : NSObject {
-
+@interface Yield : NSObject < Instruction > {
 }
 
 @end

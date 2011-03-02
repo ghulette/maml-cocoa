@@ -7,7 +7,15 @@
 //
 
 #import "Controller.h"
-
+#import "Program.h"
+#import "Binop.h"
+#import "Random.h"
+#import "ConstNum.h"
+#import "SetVar.h"
+#import "GetVar.h"
+#import "Done.h"
+#import "Yield.h"
+#import "Jump.h"
 
 @implementation Controller
 @synthesize world;
@@ -24,6 +32,17 @@
   
   World *w = [[World alloc] initWithWidth:30 Height:30];
   self.world = w;
+  
+  // Sample program
+  NSMutableArray *ins = [NSMutableArray array];
+  [ins addObject:[[Done alloc] init]];
+  Program *prg = [[Program alloc] initWithInstructions:ins];
+  [world loadProgram:prg];
+}
+
+-(IBAction)step:(id)sender
+{
+  NSLog(@"Step");
 }
 
 @end

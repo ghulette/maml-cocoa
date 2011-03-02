@@ -69,6 +69,7 @@
 		B1FC978111091D2600642B6F /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		B1FC97A91109284000642B6F /* MamlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MamlView.h; sourceTree = "<group>"; };
 		B1FC97AA1109284000642B6F /* MamlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MamlView.m; sourceTree = "<group>"; };
+		B1FF45D1131DBEC00079146D /* Instruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instruction.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +199,7 @@
 				B1759F7511094F6A00C84F3F /* World.m */,
 				B1662DC8131C64CF0014F7B5 /* Program.h */,
 				B1662DC9131C64CF0014F7B5 /* Program.m */,
+				B1FF45D1131DBEC00079146D /* Instruction.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";

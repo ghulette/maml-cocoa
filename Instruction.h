@@ -1,5 +1,5 @@
 //
-//  SetVar.h
+//  Instruction.h
 //  Maml
 //
 //  Created by Geoff Hulette on 3/1/11.
@@ -7,13 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Instruction.h"
+#import "Agent.h"
 
+@protocol Instruction
 
-@interface SetVar : NSObject < Instruction > {
-  NSString *varId;
-}
-
--(id)initWithVarId:(NSString *)vid;
+-(void)exec:(Agent *)agent;
 
 @end

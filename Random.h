@@ -7,11 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Agent.h"
+#import "Instruction.h"
 
-@interface Random : NSObject {
+@interface Random : NSObject < Instruction > {
 }
-
--(void)exec:(Agent *)agent;
 
 @end

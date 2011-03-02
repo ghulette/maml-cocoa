@@ -7,12 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Instruction.h"
 
-#import "Agent.h"
-
-@interface Done : NSObject {
+@interface Done : NSObject < Instruction > {
 }
-
--(void)exec:(Agent *)agent;
 
 @end

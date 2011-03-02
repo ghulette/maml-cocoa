@@ -7,10 +7,12 @@
 //
 
 #import "Agent.h"
-
+#import "Instruction.h"
 
 @implementation Agent
 @synthesize program;
+@synthesize done;
+@synthesize ready;
 
 -(id)init
 {
@@ -24,14 +26,13 @@
   return self;
 }
 
--(BOOL)isDone
+-(void)step
 {
-  return done;
-}
-
--(void)done
-{
-  done = YES;
+  ready = YES;
+  while (!done && ready) {
+    id <Instruction> instr = [program instructionAt:pc];
+    [instr exec:self];
+  }
 }
 
 -(void)push:(id)val

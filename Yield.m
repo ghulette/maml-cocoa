@@ -11,4 +11,9 @@
 
 @implementation Yield
 
+-(void)exec:(Agent *)agent
+{
+  agent.ready = NO;
+}
+
 @end

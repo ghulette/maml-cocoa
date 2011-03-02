@@ -7,10 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Instruction.h"
 
-
-@interface Jump : NSObject {
-
+@interface Jump : NSObject < Instruction > {
 }
 
 @end

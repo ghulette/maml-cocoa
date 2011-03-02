@@ -11,4 +11,9 @@
 
 @implementation Jump
 
+-(void)exec:(Agent *)agent
+{
+  // TODO
+}
+
 @end
